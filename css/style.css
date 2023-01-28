@@ -1,0 +1,550 @@
+/* Tom Iovino - nof1983@gmail.com */
+
+/* Box Model Hack */
+
+*{
+  box-sizing: border-box;
+}
+
+/* root */
+
+:root{
+  --main1: #131318;
+  --main2: #007ECB;
+  --footerbg: #2D2D2D;
+  --fontcolor1: #e2e2e2;
+
+  --font1: 'Roboto', sans-serif, arial;
+  --font2: 'Source Sans Pro', sans-serif, arial;
+
+  --nav-font-size: 1.2rem; /* nav links font size*/
+  --header-height: 4rem; /* header height */
+}
+
+/* fonts */
+
+.font1{
+  font-family: 'Roboto', sans-serif, arial;
+}
+
+.font2{
+  font-family: 'Source Sans Pro', sans-serif, arial;
+}
+
+/* general layout */
+
+.icon-arrows{
+  font-size:4rem;
+  font-weight:300;
+}
+
+.flex{
+  display:flex;
+}
+
+.sr-only{
+  display:none;
+  visibility:hidden;
+}
+
+body{
+  background: rgb(2,0,36);
+  background: linear-gradient(1deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(78,114,255,1) 100%);
+}
+
+/* anchor */
+
+a{
+  text-decoration:none;
+}
+
+a:link, a:visited{
+  color:var(--fontcolor1);;
+}
+
+a:hover{
+  color:rgb(178, 178, 178) !important;
+}
+
+.text-link{
+  color:rgb(0, 0, 255) !important;
+}
+
+/* buttons */
+
+.btn-group{
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+}
+
+.btn{
+  font-size:1.5rem;
+  font-family:var(--font1);
+  padding: .75rem 2.5rem;
+  margin:0;
+  color:#000000;
+  text-decoration: none;
+  display:inline-block;
+  margin: .5rem 0;
+  border-radius: 2rem;
+}
+
+.btn-primary{
+  background:#ffffff;
+}
+
+.donate{
+  padding: .75rem 1rem;
+  font-size:var(--nav-font-size);
+  color:#000000 !important;
+}
+
+.main-btns{
+  background-color:var(--main1);
+  font-weight:300;
+}
+
+.newsletter{
+  background-color:var(--main1);
+  font-weight:300;
+}
+
+/* header */
+
+.primary-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:fixed;
+  background-color:var(--main1);
+  min-width:100%;
+  height:var(--header-height);
+  z-index:100;
+}
+
+.primary-header *{
+  align-items:center;
+}
+
+.mobile-nav-toggle{
+  display:none;
+}
+
+#org-title{
+  font-size: 30px;
+  color:var(--fontcolor1);
+  width:160px;
+  font-family: var(--font1);
+}
+
+#header-icon{
+  width:9rem;
+} 
+
+#c4li-icon:hover{
+  color:#e2e2e2 !important;
+}
+
+#primary-nav{
+  gap:1.2rem; 
+  font-size:var(--nav-font-size);
+  font-weight:300;
+  color:#000000;
+}
+
+#primary-nav a{
+  margin-inline-end: .75em;
+}
+
+/* index main */
+
+#index{
+  padding-top:var(--header-height);
+  background:url("../img/li.webp");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-blend-mode:multiply;
+  background-color:#555;
+  text-align:center;
+  min-height:75vh;
+}
+
+#index-body{
+  background-color:var(--footerbg);
+}
+
+#index h1{
+  padding:3rem 0;
+  font-size:4rem;
+  font-family:var(--font2);
+  font-weight:400;
+  color:var(--fontcolor1);
+  text-shadow: 1px 1px 2px black;
+}
+
+#index p{
+  font-size:1.4rem;
+  font-family:var(--font2);
+  font-weight:300;
+  max-width:30rem;
+  margin:0 auto;
+  color:var(--fontcolor1);
+  line-height:25px;
+  text-shadow: 1px 1px 2px black;
+}
+
+#main-links{
+  display:flex;
+  justify-content:center;
+  gap:1.5rem;
+  padding:2rem;
+}
+
+.index-wrapper{
+  display:flex;
+  flex-direction:column;
+  gap:5rem;
+}
+
+/* code of conduct main */
+
+#conduct{
+  padding-top:var(--header-height);
+  min-width:18.75rem;
+  max-width:59rem;
+  margin:0 auto;
+  font-family:var(--font2);
+  font-size:calc(.8rem + .5vw);
+  font-weight:400;
+  background-color:#ffffff;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.conduct-content{
+  padding: 3rem;
+}
+
+#conduct ol{
+  padding-left:2rem;
+}
+
+#conduct p{
+  padding: 1rem 0;
+}
+
+#anti-harassment{
+  font-size:calc(1.1rem + .75vw);
+  padding:1rem 0;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+/* projects main */
+
+#projects{
+  padding-top:var(--header-height);
+  min-width:18.75rem;
+  max-width:59rem;
+  margin:0 auto;
+  font-family:var(--font2);
+  font-size:calc(.8rem + .5vw);
+  font-weight:400;
+  background-color:#ffffff;
+  letter-spacing: 1px;
+  line-height: 30px;
+  min-height:75vh;
+}
+
+.projects-content{
+  padding: 3rem;
+}
+
+/* about main */
+
+#about{
+  padding-top:var(--header-height);
+  min-width:18.75rem;
+  max-width:59rem;
+  margin:0 auto;
+  font-family:var(--font2);
+  font-size:calc(.8rem + .5vw);
+  font-weight:400;
+  background-color:#ffffff;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.about-content{
+  padding: 3rem;
+}
+
+.about-content .embed-item{
+  margin: 0 auto;
+  width:100%;
+  aspect-ratio: 16/9;
+}
+
+#content-heading{
+  font-size:calc(1.1rem + .75vw);
+  color:#000000;
+  padding:1rem 0;
+  text-shadow: .5px .5px 2px #000000;
+  border-bottom: 1.5px solid var(--main1);
+}
+
+#about p{
+  padding: 1rem 0;
+}
+
+.events-wrapper img{
+  width:calc(5rem + 3vw);
+}
+
+.events-wrapper{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.events-wrapper > *{
+  display:flex;
+  flex-direction: column;
+  text-align:center; 
+  align-items:center;
+  flex: 0 1 50%;
+  padding:2rem;
+}
+
+.events-wrapper > section > p{
+  height:10rem;
+}
+
+.team-wrapper{
+  padding:2rem 0;
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.team-wrapper > *{
+  display:flex;
+  flex-direction: row;
+  gap:2rem;
+  padding-bottom:5rem;
+}
+
+.team-wrapper > *:last-child{
+  padding-bottom:0;
+}
+
+.team-wrapper > section > div{
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+}
+
+.team-wrapper p {
+  text-indent:3rem;
+} 
+
+.team-member{
+  display:flex;
+  justify-content: space-between;
+  padding-bottom:1rem;
+}
+
+.team-member-socials{
+  display:flex;
+  font-size:3rem;
+  gap:5px;
+}
+
+.team-member-socials a{
+  color:#000000;
+}
+
+.team-member-name{
+  font-weight:600;
+  font-size:2rem;
+}
+
+.team-member-title{
+  font-weight:400;
+  font-size:1.6rem;
+}
+
+/* footer */
+
+footer{
+  border-top: 5px solid var(--main1);
+  font-family: var(--font1);
+  font-weight:100;
+  font-size:1.2rem;
+} 
+
+.footer-col{
+  color:#ffffff;
+}
+
+.newsletter{
+  color:#000000;
+}
+
+.footer-col li{
+  height:2rem;
+}
+
+.footer-container{
+  display:flex;
+  gap: 5rem;
+  justify-content: center; 
+  background: var(--footerbg);
+  padding: 2rem 0;
+}
+
+.footer-col > h4{
+  display:inline-block;
+  border-bottom:1px solid #ffffff;
+  padding-bottom:.2rem;
+}
+
+.footer-col > ul{
+  padding-top: 1rem;
+}
+
+/* media queries */
+
+@media (max-width: 33rem){
+
+/* header 'code for long island' text */
+
+  #org-title{
+    display:none;
+  }
+}
+
+@media (max-width: 45rem){
+
+/* footer */
+
+  .footer-container{
+    flex-direction:column;
+    align-items: flex-start;
+    padding-left:2rem;
+    gap: 2rem;
+  }
+
+  .footer-container > section:nth-child(2){
+    margin-top:2rem;
+  }
+
+/* end footer */
+
+/* main page */
+
+  #index{
+    background-size:contain;
+    background-position:top;
+    background-color:#e2e2e2;
+    padding-top:calc(10rem + 30vw);
+  }
+
+  #index h1, #index p{
+    color:#000000;
+  }
+
+/* end main page */
+
+/* about page */
+
+  .team-wrapper > section{
+    flex-direction:column;
+  }
+
+  .team-wrapper img{
+    width:50%;
+  }
+  
+  .team-member{
+    flex-direction:column;
+    gap:1rem;
+  }
+
+/* end about page */
+
+}
+
+@media (max-width: 58rem){ 
+
+/* header navigation */
+
+  #primary-nav a:link, #primary-nav a:visited{
+    color:#5c5c5c;
+  }
+
+  .donate{
+    background-color:var(--main1);
+    color: #ffffff !important;
+  }
+
+  .donate > span{
+    color:#ffffff;
+  }
+
+  .primary-nav{
+    position:fixed;
+    z-index:1000;
+    inset: 4rem 0 0 0;
+
+    flex-direction:column;
+    padding:2rem;
+
+    background:#FFFFFF;
+
+    transform:translateX(100%);
+    transition: transform 600ms ease-out;
+  }
+  
+  .primary-nav[data-visible="true"]{
+    transform:translateX(0%);
+  }
+
+  .mobile-nav-toggle{
+    display:block;
+    position:absolute;
+    z-index:9999;
+    background-color: transparent;
+    background-image:url("../img/menu.svg");
+    background-repeat:no-repeat;
+    width:2rem;
+    aspect-ratio:1;
+    border:0;
+    top:1.3rem;
+    right:1rem;
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"]{
+    background-image:url("../img/close.svg");
+  }
+
+/* end header navigation */
+
+/* main page */
+
+  #main-links{
+    flex-direction:column;
+  }
+
+/* end main page */
+
+/* about page */
+
+  .events-wrapper{
+    flex-direction:column;
+    flex:1 0 50%;
+    flex-wrap:wrap;
+  }
+
+/* end about page */
+
+}
