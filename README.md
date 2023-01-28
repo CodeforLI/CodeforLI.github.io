@@ -3,7 +3,7 @@ This is version 1 of Code for Long Island's website. Just something to get us st
 
 **Link to project:** https://codeforli.github.io/
 
-![alt tag](https://imgur.com/FOmkKlG)
+![image info](https://i.imgur.com/FOmkKlG.jpg)
 
 ## How It's Made:
 
