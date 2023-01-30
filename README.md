@@ -1,7 +1,7 @@
 # Code for Long Island Website 
 This is version 1 of Code for Long Island's website. Just something to get us started.
 
-**Link to project:** https://codeforli.github.io/
+**Link to project:** www.code4longisland.org
 
 ![image info](https://i.imgur.com/FOmkKlG.jpg)
 
