@@ -48,8 +48,10 @@
 }
 
 body{
-  background: rgb(2,0,36);
-  background: linear-gradient(1deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(78,114,255,1) 100%);
+  /* background: rgb(2,0,36);
+  background: linear-gradient(1deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(78,114,255,1) 100%); */
+  background: rgb(228,228,228);
+  background: linear-gradient(1deg, rgba(228,228,228,1) 0%, rgba(64,64,64,1) 100%);
 }
 
 /* anchor */
@@ -299,7 +301,7 @@ a:hover{
 }
 
 .events-wrapper img{
-  width:calc(5rem + 3vw);
+  width:calc(5rem + 3vw); 
 }
 
 .events-wrapper{
@@ -318,6 +320,12 @@ a:hover{
 
 .events-wrapper > section > p{
   height:10rem;
+}
+
+.member-image {
+  width: 200px;
+  height: clamp(300px, 35vh, 450px); 
+  object-fit: cover;
 }
 
 .team-wrapper{
@@ -443,14 +451,24 @@ footer{
 /* main page */
 
   #index{
-    background-size:contain;
+    background-image:url("../img/lighthouse.png");
+    background-color:#999;
+    /* background-size:contain;
     background-position:top;
     background-color:#e2e2e2;
-    padding-top:calc(10rem + 30vw);
+    padding-top:calc(10rem + 30vw); */
   }
 
   #index h1, #index p{
-    color:#000000;
+    color:#ffffff;
+    padding:0;
+    text-shadow: 1px 1px 10px #000000;
+    font-weight:500;
+  }
+
+  #main-links{
+    padding:0;
+    gap:.5rem;
   }
 
 /* end main page */
