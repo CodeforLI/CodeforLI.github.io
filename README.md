@@ -1,5 +1,6 @@
 # Code for Long Island Website 
 This is version 1 of Code for Long Island's website. Just something to get us started.
+If anyone would like to add content or make the site better, submit a PR.
 
 **Link to project:** www.code4longisland.org
 
